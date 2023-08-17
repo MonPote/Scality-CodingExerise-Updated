@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swaphttps://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swaphttps://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swaphttps://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    border:0;
+    box-sizing:border-box;
+    background-color:#cafdbf;
+}
+
+.app {
+    color:rgb(4, 84, 3);
+    height:100vh;
+    width:90%;
+    max-width: 600px;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-shadow: 1px 1px rgb(23, 169, 23);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.counter {
+  display:flex;
+  flex-direction: column;
+  height:12rem;
+  align-items:center;
+}
+
+.app h1{
+  margin-left:10px;
+  font-size:2rem;
+}
+
+.counter h1 {
+  font-size:7rem;
+  display: flex;
+  align-items: center;
+}
+
+.fibonacci {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom:15px;
+
+}
+
+
+.fibonacci p {
+  font-size:5px;
+}
+
+
+.fibonacci img {
+  margin-left:10px;
+  width: 20px;
+  height:20px;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+button {
+  background-color: #fff;
+  width:5rem;
+  height:2rem;
+  margin:0 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size:15px;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+button:hover:not([disabled]) {
+  background: #F6F9FE;
+  color: #11772a;
+}
+
+button:active([disabled]) {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  border: 2px solid #07b73f;
+}
+
+.threshold-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+.threshold-input label {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.threshold-input input {
+  padding: 0.5rem;
+  border: 1px solid #6ddb87;
+  background-color:rgb(255, 252, 252);
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 4rem;
+}
+
+
+.highlighter{
+    background-color: #6ddb87;
+    border-radius: 50%;
+}
+
+.change_color{
+    color:#298c41;
+}
+
+.disabled{
+  background-color: rgba(255, 255, 255, 0.9); 
+  color:#cafdbf;
+  cursor: not-allowed;
+}
+
+.none {
+  display:none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .fibonacci p {
+    font-size: 20px; 
+  }
+
+  
+.fibonacci img {
+  width: 25px;
+  height:25px;
+
+}
+}
