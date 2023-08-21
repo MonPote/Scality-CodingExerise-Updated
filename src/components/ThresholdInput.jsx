@@ -1,9 +1,8 @@
-import { useState } from 'react';
-import '../App.css';
+import { useState } from "react";
+import "../App.css";
 
-
-function ThresholdInput() {
-  const [threshold, setThreshold] = useState(15);
+function ThresholdInput({ threshold, setThreshold }) {
+  // const [threshold, setThreshold] = useState(15);
 
   const handleThresholdChange = (event) => {
     const newThreshold = parseInt(event.target.value, 10);
